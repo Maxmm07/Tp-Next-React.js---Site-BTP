@@ -7,7 +7,8 @@ export default function WithBackgroundImage() {
     <Flex
       w={'full'}
       h={'35vh'}
-      backgroundImage={`url('')`}
+      mt={5}
+      backgroundImage={'url(https://www.officiel-prevention.com/upload/2020/batiment.jpg)'}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
       <VStack

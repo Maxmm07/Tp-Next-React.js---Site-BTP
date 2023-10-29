@@ -17,19 +17,13 @@ export default function SmallWithNavigation() {
         align={{ base: 'center', md: 'center' }}>
         <Stack direction={'row'} spacing={6}>
           <Box as="a" href={'#'}>
-            Home
+            Acceuil
           </Box>
           <Box as="a" href={'#'}>
-            About
-          </Box>
-          <Box as="a" href={'#'}>
-            Blog
-          </Box>
-          <Box as="a" href={'#'}>
-            Contact
+            Nos Services
           </Box>
         </Stack>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 2022 Allan BTP. All rights reserved</Text>
       </Container>
     </Box>
   )

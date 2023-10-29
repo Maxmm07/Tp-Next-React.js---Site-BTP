@@ -1,11 +1,15 @@
 import Head from 'next/head'
-import  WithSubnavigation from '@/components/Sidebar'
+import  Simple from '@/components/Sidebar'
 import GridListWithHeading from '@/components/Features'
 import ThreeTierPricingHorizontal from '@/components/Pricing'
 import SmallWithNavigation from '@/components/Footer'
 import WithBackgroundImage from '@/components/Hero'
 import Contact from '@/components/Contact'
 import WithSpeechBubbles from '@/components/Testimonials'
+import Pricing from '@/components/Add'
+import SplitWithImage1 from '@/components/ServicesAdd/index1'
+import SplitWithImage2 from '@/components/ServicesAdd/index2'
+import SplitWithImage3 from '@/components/ServicesAdd/index'
 
 
 export default function Home() {
@@ -18,9 +22,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <WithSubnavigation/>
+        <Simple/>
         <WithBackgroundImage/>
-        <ThreeTierPricingHorizontal/>
+        <SplitWithImage1/>
+        <SplitWithImage2/>
+        <SplitWithImage3/>
         <WithSpeechBubbles/>
         <SmallWithNavigation/>
       </main>

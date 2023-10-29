@@ -27,10 +27,10 @@ interface PackageTierProps {
 }
 const PackageTier = ({ title, options, typePlan, checked = false }: PackageTierProps) => {
   const colorTextLight = checked ? 'white' : 'blue.600'
-  const bgColorLight = checked ? 'blue.400' : 'gray.300'
+  const bgColorLight = checked ? 'blue.400' : 'white.300'
 
   const colorTextDark = checked ? 'white' : 'blue.500'
-  const bgColorDark = checked ? 'blue.400' : 'gray.300'
+  const bgColorDark = checked ? 'blue.400' : 'white.300'
 
   return (
     <Stack
@@ -102,16 +102,16 @@ const ThreeTierPricingHorizontal = () => {
           </Stack>
         </Stack>
         <Divider />
-        <PackageTier title={'Assainissement de terrain'} typePlan="50€" options={options} />
+        <PackageTier title={'1'} typePlan="50€" options={options} />
         <Divider />
         <PackageTier
-          title={'Amenagement exterieur'}
+          title={'2'}
           checked={true}
           typePlan="50€"
           options={options}
         />
         <Divider />
-        <PackageTier title={'Ravalement de facade'} typePlan="50€" options={options} />
+        <PackageTier title={'3'} typePlan="50€" options={options} />
       </Stack>
     </Box>
   )

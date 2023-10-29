@@ -118,10 +118,10 @@ export default function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                'https://risibank.fr/cache/medias/0/24/2463/246398/thumb.jpeg'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Sophie Dupont'}
+              title={'Particulière'}
             />
           </Testimonial>
           <Testimonial>
@@ -133,10 +133,10 @@ export default function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                'https://risibank.fr/cache/medias/0/24/2430/243098/thumb.png'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Thomas Martin'}
+              title={'Particulier'}
             />
           </Testimonial>
           <Testimonial>
@@ -148,10 +148,10 @@ export default function WithSpeechBubbles() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                'https://risibank.fr/cache/medias/0/7/785/78515/thumb.png'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Laura Dubois'}
+              title={'Particulière'}
             />
           </Testimonial>
         </Stack>
