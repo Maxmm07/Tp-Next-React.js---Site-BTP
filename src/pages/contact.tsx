@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import * as React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import SidebarWithHeader from '@/components/Bar/sidebar'
-import SplitScreen from '@/components/body'
 import Simple from '@/components/Bar/navbar'
 import SmallWithNavigation from '@/components/Bar/footer'
-import WithSpeechBubbles from '@/components/body/review'
+import Contact from '@/components/body/contact'
+
 
 
 export default function Home() {
@@ -18,11 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <SidebarWithHeader/> */}
-        <Simple/>
-        <SplitScreen/>
-        <WithSpeechBubbles/>
-        <SmallWithNavigation/>
+      <Simple/>
+      <Contact/>
+      <SmallWithNavigation/>
       </main>
     </>
   )

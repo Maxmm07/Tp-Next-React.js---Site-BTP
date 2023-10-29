@@ -15,14 +15,15 @@ import {
   useColorModeValue,
   Stack,
   Image,
+  Center,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons'
 
 interface Props {
   children: React.ReactNode
 }
 
-const Links = ['Qui sommes nous ?', 'Nos Services']
+const Links = ['Nos Services']
 
 const NavLink = (props: Props) => {
   const { children } = props
@@ -32,12 +33,13 @@ const NavLink = (props: Props) => {
       as="a"
       px={2}
       py={1}
+      mt={7}
       rounded={'md'}
       _hover={{
         textDecoration: 'none',
         bg: useColorModeValue('blue.200', 'blue.700'),
       }}
-      href={'#'}>
+      href={'services'}>
       {children}
     </Box>
   )
@@ -59,7 +61,9 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-            <Image src="/terrieur.png" alt="Logo" w={20} h={20} />
+              <a href="/">
+            <Image src="/allan_btp_logo.png"  alt="Logo" w={32} h={20} mt={3} />
+              </a>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
@@ -78,12 +82,12 @@ export default function Simple() {
                 <Avatar
                   size={'sm'}
                   src={
-                    'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
+                    'guccihat.jpg'
                   }
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
+                <MenuItem >Link 1</MenuItem>
                 <MenuItem>Link 2</MenuItem>
                 <MenuDivider />
                 <MenuItem>Link 3</MenuItem>
