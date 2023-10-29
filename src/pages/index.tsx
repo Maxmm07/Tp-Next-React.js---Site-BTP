@@ -1,4 +1,12 @@
 import Head from 'next/head'
+import  WithSubnavigation from '@/components/Sidebar'
+import GridListWithHeading from '@/components/Features'
+import ThreeTierPricingHorizontal from '@/components/Pricing'
+import SmallWithNavigation from '@/components/Footer'
+import WithBackgroundImage from '@/components/Hero'
+import Contact from '@/components/Contact'
+import WithSpeechBubbles from '@/components/Testimonials'
+
 
 export default function Home() {
   return (
@@ -10,7 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-#test
+        <WithSubnavigation/>
+        <WithBackgroundImage/>
+        <ThreeTierPricingHorizontal/>
+        <WithSpeechBubbles/>
+        <SmallWithNavigation/>
       </main>
     </>
   )
