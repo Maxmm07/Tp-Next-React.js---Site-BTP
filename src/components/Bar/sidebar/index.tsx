@@ -22,6 +22,7 @@ import {
 } from '@chakra-ui/react'
 import {
   FiHome,
+  FiMoreHorizontal,
   FiTrendingUp,
   FiCompass,
   FiStar,
@@ -59,6 +60,7 @@ const LinkItems: Array<LinkItemProps> = [
   { name: 'Nos services', icon: FiPlus },
   { name: 'Présentation', icon: FiBook },
   { name: 'Contact', icon: FiInbox },
+  { name: 'A propos', icon: FiMoreHorizontal },
   // { name: 'Settings', icon: FiSettings },
 ]
 
@@ -103,7 +105,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: 'cyan.400',
+          bg: 'blue.400',
           color: 'white',
         }}
         {...rest}>
@@ -152,7 +154,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       </Text>
 
       <HStack spacing={{ base: '0', md: '6' }}>
-        <IconButton size="lg" variant="ghost" aria-label="open menu" icon={<FiBell />} />
+        {/* <IconButton size="lg" variant="ghost" aria-label="open menu" icon={<FiBell />} /> */}
         <Flex alignItems={'center'}>
           <Menu>
             <MenuButton py={2} transition="all 0.3s" _focus={{ boxShadow: 'none' }}>
@@ -182,7 +184,6 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
               borderColor={useColorModeValue('gray.200', 'gray.700')}>
               <MenuItem>Profile</MenuItem>
               <MenuItem>Settings</MenuItem>
-              <MenuItem>Billing</MenuItem>
               <MenuDivider />
               <MenuItem>Sign out</MenuItem>
             </MenuList>
