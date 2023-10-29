@@ -1,5 +1,3 @@
-'use client'
-
 import { Box, Container, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 
 export default function SmallWithNavigation() {
