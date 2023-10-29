@@ -39,7 +39,7 @@ const NavLink = (props: Props) => {
         textDecoration: 'none',
         bg: useColorModeValue('blue.200', 'blue.700'),
       }}
-      href={'services'}>
+      href={'/'}>
       {children}
     </Box>
   )
@@ -61,7 +61,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <a href="/">
+              <a href="home">
             <Image src="/allan_btp_logo_mieux.png"  alt="Logo" w={32} h={20} mt={3} />
               </a>
             </Box>
@@ -86,12 +86,7 @@ export default function Simple() {
                   }
                 />
               </MenuButton>
-              <MenuList>
-                <MenuItem >Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
+  
             </Menu>
           </Flex>
         </Flex>
