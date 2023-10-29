@@ -4,6 +4,9 @@ import SplitScreen from '@/components/body'
 import Simple from '@/components/Bar/navbar'
 import SmallWithNavigation from '@/components/Bar/footer'
 import SplitWithImage from '@/components/body/service'
+import SplitWithImage2 from '@/components/body/services2'
+import SplitWithImage3 from '@/components/body/services3'
+
 
 
 export default function Home() {
@@ -19,6 +22,8 @@ export default function Home() {
         {/* <SidebarWithHeader/> */}
         <Simple/>
         <SplitWithImage/>
+        <SplitWithImage2/>
+        <SplitWithImage3/>
         <SmallWithNavigation/>
       </main>
     </>

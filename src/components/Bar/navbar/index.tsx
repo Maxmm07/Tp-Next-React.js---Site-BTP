@@ -62,7 +62,7 @@ export default function Simple() {
           <HStack spacing={8} alignItems={'center'}>
             <Box>
               <a href="/">
-            <Image src="/allan_btp_logo.png"  alt="Logo" w={32} h={20} mt={3} />
+            <Image src="/allan_btp_logo_mieux.png"  alt="Logo" w={32} h={20} mt={3} />
               </a>
             </Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
@@ -71,7 +71,7 @@ export default function Simple() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={'center'}>
+          <Flex alignItems={'center'} mr={4}>
             <Menu>
               <MenuButton
                 as={Button}
